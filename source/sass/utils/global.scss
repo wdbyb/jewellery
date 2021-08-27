@@ -1,0 +1,88 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.reset-text {
+  margin: 0;
+  padding: 0;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reset-fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.reset-input {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.reset-textarea {
+  padding: 0;
+  border: none;
+}
+
+.reset-button {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  line-height: normal;
+  outline: none;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
