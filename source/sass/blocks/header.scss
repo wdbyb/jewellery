@@ -28,6 +28,10 @@
       .header__nav-list {
         display: block;
       }
+
+      .header__nav-form {
+        display: flex;
+      }
     }
   }
 
@@ -105,7 +109,6 @@
 
   @media (max-width: 1023px) {
     position: relative;
-    display: flex;
     align-items: flex-start;
     margin-top: 40px;
   }
