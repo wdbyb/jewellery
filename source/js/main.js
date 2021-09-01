@@ -1,38 +1,13 @@
 'use strict';
 
-var header = document.querySelector('.header');
-var menuToggler = document.querySelector('.header__menu');
-var questionsTogglers = document.querySelectorAll('.questions__item button');
-
-header.classList.remove('header--menu-opened');
-
-menuToggler.addEventListener('click', function() {
-  if (header.classList.contains('header--menu-opened')) {
-    header.classList.remove('header--menu-opened');
-  } else {
-    header.classList.add('header--menu-opened');
-  }
-});
-
-questionsTogglers.forEach((btn) => {
-  btn.classList.remove('active');
-
-  btn.addEventListener('click', function() {
-    if (btn.classList.contains('active')) {
-      btn.classList.remove('active');
-    } else {
-      btn.classList.add('active');
-    }
-  });
-});
-
+const header = document.querySelector('.header');
+const menuToggler = document.querySelector('.header__menu');
+const questionsTogglers = document.querySelectorAll('.questions__item button');
+const filterTogglers = document.querySelectorAll('.catalog-filter__item button');
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   slidesPerView: 4,
   spaceBetween: 30,
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -41,8 +16,6 @@ const swiper = new Swiper('.swiper', {
       return '<span class="' + className + '">' + (index + 1) + '</span>';
     }
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -68,3 +41,32 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+function elementsListen(arr, activeClass) {
+  arr.forEach((el) => {
+    el.classList.remove(activeClass);
+
+    el.addEventListener('click', function() {
+      if (el.classList.contains(activeClass)) {
+        el.classList.remove(activeClass);
+      } else {
+        el.classList.add(activeClass);
+      }
+    });
+  });
+}
+
+header.classList.remove('header--menu-opened');
+
+menuToggler.addEventListener('click', function() {
+  if (header.classList.contains('header--menu-opened')) {
+    header.classList.remove('header--menu-opened');
+  } else {
+    header.classList.add('header--menu-opened');
+  }
+});
+
+elementsListen(questionsTogglers, 'active');
+// elementsListen(filterTogglers, 'active');
+
+

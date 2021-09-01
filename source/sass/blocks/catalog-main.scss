@@ -1,0 +1,16 @@
+.catalog-main {
+  position: relative;
+  display: flex;
+  padding: 80px calc(50% - 615px);
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    padding: 80px 6%;
+    padding-top: 50px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 80px 5%;
+    padding-top: 40px;
+  }
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewellery</title>
+  <meta name="description" content="Jewellery это интернет магазин украшений.">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header header--menu-opened">
+    <form class="header__form" action="">
+      <input class="header__search" type="text" id="header-search" placeholder="Type here to search">
+      <label class="header__label" for="header-search">
+        <svg width="14" height="14">
+          <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+        </svg>
+      </label>
+    </form>
+    <button class="header__menu reset-button" type="button" aria-label="Меню сайта">
+      <svg width="25" height="16">
+        <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <a class="header__logo" href="main.html">
+      <svg width="66" height="66">
+        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <a class="header__purchases">
+      <svg width="18" height="16">
+        <use xlink:href="img/sprite_auto.svg#icon-purchases"></use>
+      </svg>
+    </a>
+    <ul class="header__user-list reset-list">
+      <li class="header__user-item">
+        <a href="login.html">Login</a>
+      </li>
+      <li class="header__user-item">
+        <a href="">Cart 0</a>
+      </li>
+    </ul>
+    <div class="header__footer">
+      <form class="header__nav-form" action="">
+        <input class="header__nav-search" type="text" id="nav-search">
+        <label class="header__nav-label" for="nav-search">
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+          </svg>
+        </label>
+      </form>
+      <nav class="header__nav">
+        <ul class="header__nav-list reset-list">
+          <li class="header__nav-item">
+            <a href="">What’s new</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">Chokers</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">Necklaces</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">Rings</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">Earrings</a>
+          </li>
+        </ul>
+        <ul class="header__info-list reset-list">
+          <li class="header__info-item">
+            <a href="">About CH</a>
+          </li>
+          <li class="header__info-item">
+            <a href="">Stores & Hours</a>
+          </li>
+          <li class="header__info-item">
+            <a href="">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="header__login-list reset-list">
+          <li class="header__login-item">
+            <a href="">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Каталог</h1>
+    <section class="catalog-intro">
+      <div class="catalog-intro__image-wrapper">
+        <img src="img/image-catalog-intro.jpg" width="1366" height="261" alt="Бижутерия">
+      </div>
+      <h2>All Jewellery</h2>
+      <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
+    </section>
+    <section class="catalog-main">
+      <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <button class="catalog-filter__open-filter reset-button" type="button">Filter</button>
+        <form class="catalog-filter__form" action="" method="POST">
+          <ul class="catalog-filter__list reset-list">
+            <li class="catalog-filter__item">
+              <h3>Product</h3>
+              <button class="catalog-filter__item-btn reset-button active" type="button"></button>
+              <ul class="catalog-filter__item-options reset-list">
+                <li class="catalog-filter__item-option">
+                  <input class="visually-hidden" type="checkbox" name="product-necklaces" id="product-necklaces">
+                  <label for="product-necklaces">Necklaces</label>
+                </li>
+                <li class="catalog-filter__item-option">
+                  <input class="visually-hidden" type="checkbox" name="product-chokers" id="product-chokers">
+                  <label for="product-chokers">Chokers</label>
+                </li>
+                <li class="catalog-filter__item-option">
+                  <input class="visually-hidden" type="checkbox" name="product-rings" id="product-rings">
+                  <label for="product-rings">Rings</label>
+                </li>
+                <li class="catalog-filter__item-option">
+                  <input class="visually-hidden" type="checkbox" name="product-earrings" id="product-earrings">
+                  <label for="product-earrings">Earrings</label>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-filter__item">
+              <h3>Material</h3>
+              <button class="catalog-filter__item-btn reset-button active" type="button"></button>
+              <ul class="catalog-filter__item-options reset-list">
+                <li class="catalog-filter__item-option">
+                  <input class="visually-hidden" type="checkbox" name="material-gold" id="material-gold">
+                  <label for="material-gold">Gold</label>
+                </li>
+                <li class="catalog-filter__item-option">
+                  <input class="visually-hidden" type="checkbox" name="material-silver" id="material-silver">
+                  <label for="material-silver">Silver</label>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-filter__item">
+              <h3>Collection</h3>
+              <button class="catalog-filter__item-btn reset-button active" type="button"></button>
+              <ul class="catalog-filter__item-options reset-list">
+                <li class="catalog-filter__item-option">
+                  <input class="visually-hidden" type="checkbox" name="collection-pink-flamingo" id="collection-pink-flamingo">
+                  <label for="collection-pink-flamingo">Pink flamingo</label>
+                </li>
+                <li class="catalog-filter__item-option">
+                  <input class="visually-hidden" type="checkbox" name="collection-dreams" id="collection-dreams">
+                  <label for="collection-dreams">Dreams</label>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-filter__item">
+              <h3>Price</h3>
+              <button class="catalog-filter__item-btn reset-button active" type="button"></button>
+              <div class="catalog-filter__item-options">
+                <div class="catalog-filter__price-bg">
+                  <div class="catalog-filter__price-diapason"></div>
+                  <div class="catalog-filter__price-min">
+                    <button class="reset-button" type="button"></button>
+                    <span>$ 55</span>
+                  </div>
+                  <div class="catalog-filter__price-max">
+                    <button class="reset-button" type="button"></button>
+                    <span>$ 155</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="catalog-filter__btn-submit reset-button" type="submit">Apply</button>
+          <button class="catalog-filter__btn-reset reset-button" type="reset">Clear All</button>
+          <button class="catalog-filter__btn-close reset-button" type="button">
+            <svg width="32" height="32">
+              <use xlink:href="img/sprite_auto.svg#icon-filter-close"></use>
+            </svg>
+          </button>
+        </form>
+      </section>
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Товары</h2>
+        <ul class="catalog-products__list reset-list">
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/layered-choker-necklace-desktop.jpg" alt="">
+            </div>
+            <h3>Layered сhoker</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/bird-necklace.jpg" alt="">
+            </div>
+            <h3>Necklace with amethyst</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/gold-layered-necklace.jpg" alt="">
+            </div>
+            <h3>Gold chain</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/gold-layered-necklace.jpg" alt="">
+            </div>
+            <h3>Gold chain</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/galaxy-earrings-desktop.jpg" alt="">
+            </div>
+            <h3>Galaxy earrings</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/gold-layered-necklace.jpg" alt="">
+            </div>
+            <h3>Gold chain</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/galaxy-earrings-desktop.jpg" alt="">
+            </div>
+            <h3>Galaxy earrings</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/layered-choker-necklace-desktop.jpg" alt="">
+            </div>
+            <h3>Layered сhoker</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/bird-necklace.jpg" alt="">
+            </div>
+            <h3>Necklace with amethyst</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/gold-layered-necklace.jpg" alt="">
+            </div>
+            <h3>Gold chain</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/galaxy-earrings-desktop.jpg" alt="">
+            </div>
+            <h3>Galaxy earrings</h3>
+            <p>$ 115</p>
+          </li>
+          <li class="catalog-products__item">
+            <div class="catalog-products__item-image">
+              <img src="img/gold-layered-necklace.jpg" alt="">
+            </div>
+            <h3>Gold chain</h3>
+            <p>$ 115</p>
+          </li>
+        </ul>
+        <div class="catalog-products__pagination">
+          <p class="catalog-products__pagination-prev reset-text">Previous</p>
+          <ul class="catalog-products__pagination-numbers reset-list">
+            <li class="catalog-products__pagination-number active">1</li>
+            <li class="catalog-products__pagination-number">2</li>
+            <li class="catalog-products__pagination-number">3</li>
+            <li class="catalog-products__pagination-number">4</li>
+            <li class="catalog-products__pagination-number">5</li>
+          </ul>
+          <p class="catalog-products__pagination-next reset-text">Next</p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__subscription">
+      <p class="footer__subscription-title reset-text">The good stuff in your inbox </p>
+      <p class="footer__subscription-description reset-text">News and updates from CH. No spam, we promise.</p>
+      <form action="" class="footer__form">
+        <input class="footer__email-input" type="email" name="" id="" placeholder="Your E-mail">
+        <label class="footer__email-label" for=""></label>
+        <button class="footer__email-submit reset-button" type="submit">
+          Sign up
+          <svg width="29" height="9">
+            <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <ul class="footer__service-list reset-list">
+      <li class="footer__service-item">
+        <a href="#ordering">Ordering & Payment</a>
+      </li>
+      <li class="footer__service-item">
+        <a href="#terms">Terms & Conditions</a>
+      </li>
+      <li class="footer__service-item">
+        <a href="#returns">Returns & Exchanges</a>
+      </li>
+      <li class="footer__service-item">
+        <a href="#delivery">Delivery</a>
+      </li>
+    </ul>
+    <ul class="footer__contacts-list reset-list">
+      <li class="footer__contacts-item">
+        <a href="">About CH</a>
+      </li>
+      <li class="footer__contacts-item">
+        <a href="">Stores & Hours</a>
+      </li>
+      <li class="footer__contacts-item">
+        <a href="">Jobs</a>
+      </li>
+      <li class="footer__contacts-item">
+        <a href="">Contact Us</a>
+      </li>
+    </ul>
+    <ul class="footer__social-list reset-list">
+      <li class="footer__social-item">
+        <a href="#facebook">
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+          </svg>
+          <span>
+            Facebook
+          </span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#instagram">
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
+          </svg>
+          <span>
+            Instagram
+          </span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#pinterest">
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-pin"></use>
+          </svg>
+          <span>
+            Pinterest
+          </span>
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#twitter">
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-twit"></use>
+          </svg>
+          <span>
+            Twitter
+          </span>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
