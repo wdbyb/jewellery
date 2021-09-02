@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
     type: 'bullets',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+      return '<span class=\'' + className + '\'>' + (index + 1) + '</span>';
     }
   },
   navigation: {
@@ -36,7 +36,7 @@ const swiper = new Swiper('.swiper', {
       pagination: {
         type: 'fraction',
         renderFraction: function (currentClass, totalClass) {
-          return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+          return '<span class=\'' + currentClass + '\'></span>' + ' of ' + '<span class=\'' + totalClass + '\'></span>';
         },
       }
     },
@@ -48,6 +48,7 @@ const swiper = new Swiper('.swiper', {
     },
     1024: {
       slidesPerView: 4,
+      allowTouchMove: false,
     }
   }
 });
@@ -133,5 +134,10 @@ loginForm.addEventListener('submit', function(evt) {
   loginForm.reset();
 });
 
-elementsListen(questionsTogglers, 'active');
-elementsListen(filterTogglers, 'active');
+if (questionsTogglers) {
+  elementsListen(questionsTogglers, 'active');
+}
+
+if (filterTogglers) {
+  elementsListen(filterTogglers, 'active');
+}
