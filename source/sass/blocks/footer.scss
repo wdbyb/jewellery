@@ -73,6 +73,17 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: orange;
+  }
+
+  svg {
+    margin-left: 12px;
+  }
 }
 
 .footer__service-list,
@@ -114,6 +125,14 @@
 .footer__contacts-item,
 .footer__social-item {
   margin-bottom: 30px;
+
+  a {
+    &:hover,
+    &:focus,
+    &:active {
+      color: orange;
+    }
+  }
 }
 
 .footer__social-item {

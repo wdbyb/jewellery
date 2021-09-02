@@ -37,6 +37,13 @@
   font-size: 16px;
   line-height: 21px;
   border-bottom: 1px solid #A87B62;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: orange;
+    border-color: orange;
+  }
 }
 
 .instagram__photos {

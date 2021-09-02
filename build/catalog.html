@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jewellery</title>
+  <title>Catalog</title>
   <meta name="description" content="Jewellery это интернет магазин украшений.">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header header--menu-opened">
-    <form class="header__form" action="">
+    <form class="header__form" action="https://echo.htmlacademy.ru/" id="header-form">
       <input class="header__search" type="text" id="header-search" placeholder="Type here to search">
       <label class="header__label" for="header-search">
         <svg width="14" height="14">
@@ -18,7 +18,7 @@
         </svg>
       </label>
     </form>
-    <button class="header__menu reset-button" type="button" aria-label="Меню сайта">
+    <button class="header__menu reset-button" type="button" aria-label="Меню сайта" tabindex="0">
       <svg width="25" height="16">
         <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
       </svg>
@@ -34,7 +34,7 @@
       </svg>
     </a>
     <ul class="header__user-list reset-list">
-      <li class="header__user-item">
+      <li class="header__user-item header__user-item--login">
         <a href="login.html">Login</a>
       </li>
       <li class="header__user-item">
@@ -42,7 +42,7 @@
       </li>
     </ul>
     <div class="header__footer">
-      <form class="header__nav-form" action="">
+      <form class="header__nav-form" action="https://echo.htmlacademy.ru/" id="nav-form">
         <input class="header__nav-search" type="text" id="nav-search">
         <label class="header__nav-label" for="nav-search">
           <svg width="14" height="14">
@@ -99,8 +99,8 @@
     <section class="catalog-main">
       <section class="catalog-filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <button class="catalog-filter__open-filter reset-button" type="button">Filter</button>
-        <form class="catalog-filter__form" action="" method="POST">
+        <button class="catalog-filter__open-filter opened reset-button" type="button">Filter</button>
+        <form class="catalog-filter__form" action="https://echo.htmlacademy.ru/" method="POST" id="filter-form">
           <ul class="catalog-filter__list reset-list">
             <li class="catalog-filter__item">
               <h3>Product</h3>
@@ -268,24 +268,46 @@
           </li>
         </ul>
         <div class="catalog-products__pagination">
-          <p class="catalog-products__pagination-prev reset-text">Previous</p>
+          <p class="catalog-products__pagination-prev reset-text" tabindex="0">Previous</p>
           <ul class="catalog-products__pagination-numbers reset-list">
-            <li class="catalog-products__pagination-number active">1</li>
-            <li class="catalog-products__pagination-number">2</li>
-            <li class="catalog-products__pagination-number">3</li>
-            <li class="catalog-products__pagination-number">4</li>
-            <li class="catalog-products__pagination-number">5</li>
+            <li class="catalog-products__pagination-number active" tabindex="0">1</li>
+            <li class="catalog-products__pagination-number" tabindex="0">2</li>
+            <li class="catalog-products__pagination-number" tabindex="0">3</li>
+            <li class="catalog-products__pagination-number" tabindex="0">4</li>
+            <li class="catalog-products__pagination-number" tabindex="0">5</li>
           </ul>
-          <p class="catalog-products__pagination-next reset-text">Next</p>
+          <p class="catalog-products__pagination-next reset-text" tabindex="0">Next</p>
         </div>
       </section>
     </section>
+    <div class="login login--popup hide">
+      <div class="login__wrapper">
+        <div class="login__image">
+          <img src="img/image-login-intro.jpg" width="430" height="140" alt="Бижутерия">
+        </div>
+        <h2 class="login__title reset-text">Log In</h2>
+        <button class="login__btn-close reset-button" type="button">
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="login__form" action="https://echo.htmlacademy.ru/" method="POST" id="login-form">
+          <input class="login__email" type="email" name="login-email" id="login-email" placeholder="Your E-mail">
+          <label class="visually-hidden" for="login-email">E-mail</label>
+          <input class="login__password" type="password" name="login-password" id="login-password" placeholder="Password">
+          <label class="visually-hidden" for="login-password">Password</label>
+          <p class="login__forgot reset-text"><a href="#">Forgot your password?</a></p>
+          <button class="login__btn-submit reset-button" type="submit">Log In</button>
+          <p class="login__account reset-text">Don't have an account? <a href="">Sign Up</a></p>
+        </form>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__subscription">
       <p class="footer__subscription-title reset-text">The good stuff in your inbox </p>
       <p class="footer__subscription-description reset-text">News and updates from CH. No spam, we promise.</p>
-      <form action="" class="footer__form">
+      <form action="https://echo.htmlacademy.ru/" class="footer__form" id="subscription-form">
         <input class="footer__email-input" type="email" name="" id="" placeholder="Your E-mail">
         <label class="footer__email-label" for=""></label>
         <button class="footer__email-submit reset-button" type="submit">

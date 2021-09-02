@@ -77,6 +77,12 @@
     &.active + p {
       display: block;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid orange;
+    }
   }
 
   @media (max-width: 767px) {

@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="header header--menu-opened">
-    <form class="header__form" action="">
+    <form class="header__form" action="https://echo.htmlacademy.ru/" id="header-form">
       <input class="header__search" type="text" id="header-search" placeholder="Type here to search">
       <label class="header__label" for="header-search">
         <svg width="14" height="14">
@@ -18,7 +18,7 @@
         </svg>
       </label>
     </form>
-    <button class="header__menu reset-button" type="button" aria-label="Меню сайта">
+    <button class="header__menu reset-button" type="button" aria-label="Меню сайта" tabindex="0">
       <svg width="25" height="16">
         <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
       </svg>
@@ -34,7 +34,7 @@
       </svg>
     </a>
     <ul class="header__user-list reset-list">
-      <li class="header__user-item">
+      <li class="header__user-item header__user-item--login">
         <a href="login.html">Login</a>
       </li>
       <li class="header__user-item">
@@ -42,7 +42,7 @@
       </li>
     </ul>
     <div class="header__footer">
-      <form class="header__nav-form" action="">
+      <form class="header__nav-form" action="https://echo.htmlacademy.ru/" id="nav-form">
         <input class="header__nav-search" type="text" id="nav-search">
         <label class="header__nav-label" for="nav-search">
           <svg width="14" height="14">
@@ -98,7 +98,7 @@
     </section>
     <section class="goods main-slider">
       <h2 class="goods__title reset-text">New In</h2>
-      <a href="#" class="goods__link">Shop Now</a>
+      <a href="catalog.html" class="goods__link">Shop Now</a>
       <div class="goods__buttons">
         <div class="goods__btn-prev reset-button swiper-button-prev">
           <svg width="29" height="9">
@@ -254,12 +254,36 @@
         </li>
       </ul>
     </section>
+    <div class="login login--popup hide">
+      <div class="login__wrapper">
+        <div class="login__looper" tabindex="1"></div>
+        <div class="login__image">
+          <img src="img/image-login-intro.jpg" width="430" height="140" alt="Бижутерия">
+        </div>
+        <h2 class="login__title reset-text">Log In</h2>
+        <button class="login__btn-close reset-button" type="button" tabindex="7">
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="login__form" action="https://echo.htmlacademy.ru/" method="POST" id="login-form">
+          <input class="login__email" type="email" name="login-email" id="login-email" placeholder="Your E-mail" tabindex="2">
+          <label class="visually-hidden" for="login-email">E-mail</label>
+          <input class="login__password" type="password" name="login-password" id="login-password" placeholder="Password" tabindex="3">
+          <label class="visually-hidden" for="login-password">Password</label>
+          <p class="login__forgot reset-text"><a href="#" tabindex="4">Forgot your password?</a></p>
+          <button class="login__btn-submit reset-button" type="submit" tabindex="5">Log In</button>
+          <p class="login__account reset-text">Don't have an account? <a href="#" tabindex="6">Sign Up</a></p>
+        </form>
+        <div class="login__looper" tabindex="8"></div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__subscription">
       <p class="footer__subscription-title reset-text">The good stuff in your inbox </p>
       <p class="footer__subscription-description reset-text">News and updates from CH. No spam, we promise.</p>
-      <form action="" class="footer__form">
+      <form action="https://echo.htmlacademy.ru/" class="footer__form" id="subscription-form">
         <input class="footer__email-input" type="email" name="" id="" placeholder="Your E-mail">
         <label class="footer__email-label" for=""></label>
         <button class="footer__email-submit reset-button" type="submit">

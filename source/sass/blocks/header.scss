@@ -88,6 +88,13 @@
 .header__menu {
   display: none;
   color: #1D1613;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: orange;
+  }
 
   @media (max-width: 1023px) {
     display: block;
@@ -182,13 +189,25 @@
 
 .header__user-item {
   margin-left: 35px;
+
+  a {
+    &:hover,
+    &:focus,
+    &:active {
+      color: orange;
+    }
+  }
 }
 
 .header__nav {
   flex-basis: 100%;
 
-  @media (max-width: 1023px) {
-    // display: none;
+  a {
+    &:hover,
+    &:focus,
+    &:active {
+      color: orange;
+    }
   }
 }
 

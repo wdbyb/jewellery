@@ -115,6 +115,12 @@
 
   li {
     margin-right: 15px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: orange;
+    }
   }
 
   li.active {
@@ -132,6 +138,12 @@
 
 .catalog-products__pagination-next,
 .catalog-products__pagination-prev {
+  &:hover,
+  &:focus,
+  &:active {
+    color: orange;
+  }
+
   @media (max-width: 767px) {
     display: none;
   }
