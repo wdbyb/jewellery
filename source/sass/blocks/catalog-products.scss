@@ -31,11 +31,11 @@
 
 .catalog-products__item {
   min-height: 330px;
+  font-family: "Poppins", "Arial", sans-serif;
 
   h4 {
     margin: 6px 0;
     margin-top: 21px;
-    font-family: "Poppins";
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
@@ -44,7 +44,6 @@
 
   p {
     margin: 0;
-    font-family: "Poppins";
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
@@ -93,7 +92,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 72px;
-  font-family: "Poppins";
+  font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
