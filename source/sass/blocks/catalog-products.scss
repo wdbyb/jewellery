@@ -16,20 +16,25 @@
 .catalog-products__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 40px;
-  column-gap: 30px;
+  row-gap: 36px;
+  column-gap: 28px;
+
+  @media (max-width: 1023px) {
+    row-gap: 30px;
+  }
 
   @media (max-width: 767px) {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
   }
 }
 
 .catalog-products__item {
-  min-height: 352px;
+  min-height: 330px;
 
   h4 {
-    margin: 15px 0;
-    margin-top: 25px;
+    margin: 6px 0;
+    margin-top: 21px;
     font-family: "Poppins";
     font-weight: 500;
     font-size: 16px;
@@ -52,6 +57,10 @@
 
   @media (max-width: 767px) {
     min-height: 220px;
+
+    h4 {
+      margin-top: 15px;
+    }
   }
 }
 
@@ -83,7 +92,7 @@
 .catalog-products__pagination {
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 72px;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 16px;
@@ -93,15 +102,19 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 140px;
+    bottom: 132px;
     left: 0;
     right: 0;
     height: 1px;
     background: #F6F5F4;
   }
 
+  @media (max-width: 1023px) {
+    margin-top: 67px;
+  }
+
   @media (max-width: 767px) {
-    margin-top: 50px;
+    margin-top: 40px;
 
     &::before {
       display: none;
@@ -131,7 +144,7 @@
     margin: 0 auto;
 
     li {
-      margin-right: 25px;
+      margin-right: 20px;
     }
   }
 }

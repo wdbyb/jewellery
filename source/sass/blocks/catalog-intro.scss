@@ -1,14 +1,13 @@
 .catalog-intro {
   position: relative;
-  padding: 84px 0;
+  padding: 94px 0;
   font-family: "Cormorant Garamond";
   color: #FFFFFF;
   background: rgba(86, 64, 52, 0.7);
 
   h2 {
     padding: 0 70px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0;
     font-weight: 700;
     font-size: 34px;
     line-height: 44px;
@@ -28,7 +27,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 70px 5%;
+    padding: 79px 5%;
 
     h2, p {
       padding: 0;

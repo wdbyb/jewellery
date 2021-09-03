@@ -21,14 +21,15 @@
 
   @media (max-width: 1023px) {
     display: none;
-    max-width: 442px;
-    padding: 40px 0;
+    max-width: 422px;
+    padding: 0;
+    padding-bottom: 40px;
     box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
   }
 
   @media (max-width: 767px) {
     max-width: inherit;
-    padding: 0;
+    padding: 10px;
     padding-bottom: 30px;
   }
 }
@@ -48,6 +49,8 @@
   display: flex;
   flex-wrap: wrap;
   padding: 25px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   font-family: "Poppins";
   font-style: normal;
   color: #1D1613;
@@ -71,6 +74,7 @@
     padding: 3px;
     transform: rotate(180deg);
     margin-left: auto;
+    color: #A87B62;
     cursor: pointer;
 
     &.active {
@@ -93,8 +97,29 @@
     }
   }
 
+  @media (max-width: 1023px) {
+    align-items: center;
+    padding: 28px;
+    padding-left: 23px;
+    padding-right: 36px;
+
+    h4 {
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    .catalog-filter__item-btn {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid #A87B62;
+    }
+  }
+
   @media (max-width: 767px) {
-    padding: 30px 20px;
+    padding: 20px;
   }
 }
 
@@ -103,12 +128,23 @@
   flex-basis: 100%;
   padding: 10px;
   padding-bottom: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
+
+  @media (max-width: 1023px) {
+    padding: 0;
+    margin-top: 26px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
 }
 
 .catalog-filter__item-option {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 14px;
@@ -138,6 +174,21 @@
   input:checked + label::before {
     background: #A87B62;
   }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 17px;
+
+    label {
+      margin-left: 30px;
+      font-size: 16px;
+      line-height: 21px;
+
+      &::before {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
 }
 
 .catalog-filter__btn-submit,
@@ -161,12 +212,12 @@
   }
 
   @media (max-width: 1023px) {
-    width: 80%;
+    width: 85%;
   }
 }
 
 .catalog-filter__btn-submit {
-  margin-top: 35px;
+  margin-top: 25px;
   color: #FFFFFF;
   background: #A87B62;
 
@@ -178,7 +229,7 @@
 }
 
 .catalog-filter__btn-reset {
-  margin-top: 25px;
+  margin-top: 20px;
   color: #1D1613;
   border: 1px solid #A87B62;
 
@@ -194,16 +245,26 @@
   position: relative;
   width: 100%;
   height: 1px;
-  margin: 20px 0;
-  margin-bottom: 40px;
+  margin: 0;
+  margin-bottom: 24px;
   background: #F0EAE4;
+
+  @media (max-width: 1023px) {
+    max-width: 304px;
+    margin: 13px 0;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: inherit;
+  }
 }
 
 .catalog-filter__price-diapason {
   position: absolute;
   top: 0;
-  left: 15%;
-  width: 50%;
+  left: 23%;
+  right: 20%;
   height: 1px;
   background: #A87B62;
 }
@@ -226,22 +287,32 @@
   }
 
   span {
-    margin-top: 10px;
+    white-space: nowrap;
+    margin-top: 7px;
     font-family: "Poppins";
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     color: #1D1613;
   }
+
+  @media (max-width: 1023px) {
+    top: -9.5px;
+
+    button {
+      width: 19px;
+      height: 19px;
+    }
+  }
 }
 
 .catalog-filter__price-min {
-  left: 15%;
+  left: 23%;
   transform: translateX(-50%);
 }
 
 .catalog-filter__price-max {
-  left: 65%;
+  left: 80%;
   transform: translateX(-50%);
 }
 
