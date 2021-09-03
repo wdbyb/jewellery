@@ -81,7 +81,7 @@
         </ul>
         <ul class="header__login-list reset-list">
           <li class="header__login-item">
-            <a href="#" aria-label="Логин">Login</a>
+            <a href="login.html" aria-label="Логин">Login</a>
           </li>
         </ul>
       </nav>
@@ -91,7 +91,11 @@
     <h1 class="visually-hidden">Каталог</h1>
     <section class="catalog-intro">
       <div class="catalog-intro__image-wrapper">
-        <img src="img/image-catalog-intro.jpg" width="1366" height="261" alt="Бижутерия">
+        <!-- 1x = width: 1366, height: 261; 2x = width: 2732, height: 522; -->
+        <picture>
+          <source type="image/webp" srcset="img/image-catalog-intro.webp 1x, img/image-catalog-intro@2x.webp 2x">
+          <img width="1366" height="261" src="img/image-catalog-intro.jpg" srcset="img/image-catalog-intro@2x.jpg" alt="Бижутерия на столе">
+        </picture>
       </div>
       <h2>All Jewellery</h2>
       <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
@@ -201,84 +205,132 @@
         <ul class="catalog-products__list reset-list">
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/layered-choker-necklace-desktop.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
+                <img width="270" height="272" src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Бижутерия">
+              </picture>
             </div>
             <h4>Layered choker</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/bird-necklace.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
+                <img width="270" height="272" src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Necklace with amethyst</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/gold-layered-necklace.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
+                <img width="270" height="272" src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Gold chain</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/gold-layered-necklace.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
+                <img width="270" height="272" src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Gold chain</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/galaxy-earrings-desktop.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/double-pearl-earrings.webp 1x, img/double-pearl-earrings@2x.webp 2x">
+                <img width="270" height="272" src="img/double-pearl-earrings.jpg" srcset="img/double-pearl-earrings@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Galaxy earrings</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/gold-layered-necklace.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x">
+                <img width="270" height="272" src="img/boho-earrings.jpg" srcset="img/boho-earrings@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Gold chain</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/galaxy-earrings-desktop.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
+                <img width="270" height="272" src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Galaxy earrings</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/layered-choker-necklace-desktop.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
+                <img width="270" height="272" src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Бижутерия">
+              </picture>
             </div>
             <h4>Layered choker</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/bird-necklace.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
+                <img width="270" height="272" src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Necklace with amethyst</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/gold-layered-necklace.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x">
+                <img width="270" height="272" src="img/elephant-earrings.jpg" srcset="img/elephant-earrings@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Gold chain</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/galaxy-earrings-desktop.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x">
+                <img width="270" height="272" src="img/origami-crane-necklace.jpg" srcset="img/origami-crane-necklace@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Galaxy earrings</h4>
             <p>$ 115</p>
           </li>
           <li class="catalog-products__item">
             <div class="catalog-products__item-image">
-              <img src="img/gold-layered-necklace.jpg" alt="">
+              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+              <picture>
+                <source type="image/webp" srcset="img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x">
+                <img width="270" height="272" src="img/blue-gemstone-pendant.jpg" srcset="img/blue-gemstone-pendant@2x.jpg" alt="Птица на ожерелье">
+              </picture>
             </div>
             <h4>Gold chain</h4>
             <p>$ 115</p>
@@ -301,7 +353,11 @@
       <div class="login__wrapper">
         <div class="login__looper" tabindex="1"></div>
         <div class="login__image">
-          <img src="img/image-login-intro.jpg" width="430" height="140" alt="Бижутерия">
+          <!-- 1x = width: 430, height: 140; 2x = width: 860, height: 280; -->
+          <picture>
+            <source type="image/webp" srcset="img/image-login-intro.webp 1x, img/image-login-intro@2x.webp 2x">
+            <img width="430" height="140" src="img/image-login-intro.jpg" srcset="img/image-login-intro@2x.jpg" alt="Бижутерия на столе">
+          </picture>
         </div>
         <h2 class="login__title reset-text">Log In</h2>
         <button class="login__btn-close reset-button" type="button" tabindex="7" aria-label="Закрыть попап">

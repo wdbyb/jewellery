@@ -92,7 +92,11 @@
     <section class="login">
       <div class="login__wrapper">
         <div class="login__image">
-          <img src="img/image-login-intro.jpg" width="430" height="140" alt="Бижутерия">
+          <!-- 1x = width: 430, height: 140; 2x = width: 860, height: 280; -->
+          <picture>
+            <source type="image/webp" srcset="img/image-login-intro.webp 1x, img/image-login-intro@2x.webp 2x">
+            <img width="430" height="140" src="img/image-login-intro.jpg" srcset="img/image-login-intro@2x.jpg" alt="Бижутерия на столе">
+          </picture>
         </div>
         <h2 class="login__title reset-text">Log In</h2>
         <button class="login__btn-close reset-button" type="button" aria-label="Закрыть попап">

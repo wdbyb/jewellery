@@ -7,6 +7,7 @@ const filterTogglers = document.querySelectorAll('.catalog-filter__item button')
 const filterToggler = document.querySelector('.catalog-filter__open-filter');
 const filterClose = document.querySelector('.catalog-filter__btn-close');
 const loginBtn = document.querySelector('.header__user-item--login a');
+const loginBtnMob = document.querySelector('.header__login-item a');
 const popup = document.querySelector('.login');
 const popupEmail = popup.querySelector('#login-email');
 const popupClose = popup.querySelector('.login__btn-close');
@@ -67,6 +68,41 @@ function elementsListen(arr, activeClass) {
   });
 }
 
+function listenPopupActivator(element) {
+  element.addEventListener('click', function(evt) {
+    evt.preventDefault();
+
+    loopers.forEach((item) => {
+      item.addEventListener('focus', () => {
+        popupEmail.focus();
+      });
+    });
+
+    popup.classList.remove('hide');
+    body.style.overflow = 'hidden';
+    popupEmail.focus();
+
+    popupClose.addEventListener('click', function() {
+      popup.classList.add('hide');
+      body.style.overflow = 'scroll';
+    });
+
+    document.addEventListener('click', function(evt) {
+      if (evt.target.classList.contains('login')) {
+        popup.classList.add('hide');
+        body.style.overflow = 'scroll';
+      }
+    });
+
+    document.addEventListener('keydown', function(evt) {
+      if (evt.key === 'Escape') {
+        popup.classList.add('hide');
+        body.style.overflow = 'scroll';
+      }
+    });
+  });
+}
+
 header.classList.remove('header--menu-opened');
 
 if (filterToggler) {
@@ -93,38 +129,8 @@ menuToggler.addEventListener('click', function() {
   }
 });
 
-loginBtn.addEventListener('click', function(evt) {
-  evt.preventDefault();
-
-  loopers.forEach((item) => {
-    item.addEventListener('focus', () => {
-      popupEmail.focus();
-    });
-  });
-
-  popup.classList.remove('hide');
-  body.style.overflow = 'hidden';
-  popupEmail.focus();
-
-  popupClose.addEventListener('click', function() {
-    popup.classList.add('hide');
-    body.style.overflow = 'scroll';
-  });
-
-  document.addEventListener('click', function(evt) {
-    if (evt.target.classList.contains('login')) {
-      popup.classList.add('hide');
-      body.style.overflow = 'scroll';
-    }
-  });
-
-  document.addEventListener('keydown', function(evt) {
-    if (evt.key === 'Escape') {
-      popup.classList.add('hide');
-      body.style.overflow = 'scroll';
-    }
-  });
-});
+listenPopupActivator(loginBtnMob);
+listenPopupActivator(loginBtn);
 
 loginForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
