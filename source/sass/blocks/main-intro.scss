@@ -1,14 +1,13 @@
 .intro {
   position: relative;
-  padding: 168px 0;
+  padding: 182px 0;
   font-family: "Cormorant Garamond";
   color: #FFFFFF;
   background: rgba(86, 64, 52, 0.7);
 
   h2 {
     padding: 0 100px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0;
     font-weight: 700;
     font-size: 45px;
     line-height: 58px;
@@ -20,6 +19,8 @@
   p {
     padding: 0 150px;
     margin: 0 auto;
+    margin-top: -8px;
+    font-style: italic;
     font-weight: 400;
     font-size: 38px;
     line-height: 49px;
@@ -27,7 +28,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 175px 0;
+    padding: 188px 0;
 
     h2, p {
       padding: 0 5%;

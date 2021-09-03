@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 calc(50% - 683px);
-  padding-top: 30px;
+  padding: 0 calc(50% - 615px);
+  padding-top: 25px;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 14px;
@@ -11,7 +11,7 @@
 
   @media (max-width: 1023px) {
     align-items: center;
-    padding: 30px 6%;
+    padding: 27px 6%;
 
     &--menu-opened {
       background: #A87B62;
@@ -36,7 +36,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 20px 5%;
+    padding: 18px 5%;
   }
 }
 
@@ -52,6 +52,10 @@
   line-height: 23px;
   color: rgba(255, 255, 255, 0.75);
 
+  @media (max-width: 1023px) {
+    margin: 45px 0;
+  }
+
   @media (max-width: 767px) {
     margin-top: 5px;
     margin-bottom: 15px;
@@ -60,6 +64,10 @@
 
 .header__info-item {
   margin-bottom: 30px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 20px;
+  }
 }
 
 .header__login-list {
@@ -78,7 +86,7 @@
   display: flex;
   align-items: flex-start;
   margin-top: 17px;
-  margin-left: 24px;
+  margin-left: 28px;
 
   @media (max-width: 1023px) {
     display: none;
@@ -87,6 +95,8 @@
 
 .header__menu {
   display: none;
+  width: 23px;
+  height: 28px;
   color: #1D1613;
   cursor: pointer;
 
@@ -94,6 +104,11 @@
   &:focus,
   &:active {
     color: orange;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
   }
 
   @media (max-width: 1023px) {
@@ -155,6 +170,7 @@
   width: 66px;
   height: 66px;
   margin: 0 auto;
+  margin-top: 5px;
   color: #A87B62;
 
   svg {
@@ -170,7 +186,14 @@
 
 .header__purchases {
   display: none;
+  width: 20px;
+  height: 20px;
   color: #1D1613;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 
   @media (max-width: 1023px) {
     display: block;
@@ -179,11 +202,13 @@
 
 .header__user-list {
   display: flex;
+  padding-left: 55px;
   margin-top: 17px;
-  margin-right: 24px;
+  margin-right: 32px;
 
   @media (max-width: 1023px) {
     display: none;
+    padding: 0;
   }
 }
 
@@ -201,6 +226,8 @@
 
 .header__nav {
   flex-basis: 100%;
+  font-size: 16px;
+  line-height: 24px;
 
   a {
     &:hover,
@@ -209,21 +236,25 @@
       color: orange;
     }
   }
+
+  @media (max-width: 1023px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .header__nav-list {
   display: flex;
   justify-content: center;
-  padding: 24px;
+  padding: 18px;
+  padding-left: 30px;
   margin-top: 20px;
-  font-size: 24px;
-  line-height: 36px;
 
   @media (max-width: 1023px) {
     display: none;
     flex-direction: column;
     padding: 0;
-    margin-top: 55px;
+    margin-top: 45px;
   }
 
   @media (max-width: 767px) {
@@ -232,10 +263,10 @@
 }
 
 .header__nav-item {
-  margin: 0 17px;
+  margin: 0 18px;
 
   @media (max-width: 1023px) {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
