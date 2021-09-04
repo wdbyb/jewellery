@@ -76,6 +76,14 @@
     line-height: 18px;
     text-align: center;
   }
+
+  a {
+    &:active,
+    &:focus,
+    &:hover {
+      color: orange;
+    }
+  }
 }
 
 .goods__item-image {

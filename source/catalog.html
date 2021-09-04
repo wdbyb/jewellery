@@ -11,8 +11,8 @@
 <body>
   <header class="header header--menu-opened">
     <form class="header__form" action="https://echo.htmlacademy.ru/" id="header-form">
-      <input class="header__search" type="text" id="header-search" placeholder="Type here to search">
-      <label class="header__label" for="header-search">
+      <input type="search" id="header-search" placeholder="Type here to search">
+      <label for="header-search">
         <svg width="14" height="14">
           <use xlink:href="img/sprite_auto.svg#icon-search"></use>
         </svg>
@@ -28,17 +28,17 @@
         <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
       </svg>
     </a>
-    <a href="#" class="header__purchases" aria-label="Корзина">
-      <svg width="18" height="16">
-        <use xlink:href="img/sprite_auto.svg#icon-purchases"></use>
-      </svg>
-    </a>
     <ul class="header__user-list reset-list">
       <li class="header__user-item header__user-item--login">
         <a href="login.html" aria-label="Авторизация">Login</a>
       </li>
       <li class="header__user-item">
-        <a href="" aria-label="Количество товаров в корзине">Cart 0</a>
+        <a class="header__user-link header__user-link--purchases" href="#" aria-label="Количество товаров в корзине">
+          <svg width="18" height="16">
+            <use xlink:href="img/sprite_auto.svg#icon-purchases"></use>
+          </svg>
+          <span>Cart 0</span>
+        </a>
       </li>
     </ul>
     <div class="header__footer">
@@ -204,148 +204,185 @@
         <h3 class="visually-hidden">Товары</h3>
         <ul class="catalog-products__list reset-list">
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
-                <img width="270" height="272" src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Бижутерия">
-              </picture>
-            </div>
-            <h4>Layered choker</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
+                  <img width="270" height="272" src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Бижутерия">
+                </picture>
+              </div>
+              <h4>Layered choker</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
-                <img width="270" height="272" src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Necklace with amethyst</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
+                  <img width="270" height="272" src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Necklace with amethyst</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
-                <img width="270" height="272" src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Gold chain</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
+                  <img width="270" height="272" src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Gold chain</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
-                <img width="270" height="272" src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Gold chain</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
+                  <img width="270" height="272" src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Gold chain</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/double-pearl-earrings.webp 1x, img/double-pearl-earrings@2x.webp 2x">
-                <img width="270" height="272" src="img/double-pearl-earrings.jpg" srcset="img/double-pearl-earrings@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Galaxy earrings</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/double-pearl-earrings.webp 1x, img/double-pearl-earrings@2x.webp 2x">
+                  <img width="270" height="272" src="img/double-pearl-earrings.jpg" srcset="img/double-pearl-earrings@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Galaxy earrings</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x">
-                <img width="270" height="272" src="img/boho-earrings.jpg" srcset="img/boho-earrings@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Gold chain</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x">
+                  <img width="270" height="272" src="img/boho-earrings.jpg" srcset="img/boho-earrings@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Gold chain</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
-                <img width="270" height="272" src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Galaxy earrings</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x">
+                  <img width="270" height="272" src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Galaxy earrings</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
-                <img width="270" height="272" src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Бижутерия">
-              </picture>
-            </div>
-            <h4>Layered choker</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
+                  <img width="270" height="272" src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Бижутерия">
+                </picture>
+              </div>
+              <h4>Layered choker</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
-                <img width="270" height="272" src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Necklace with amethyst</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x">
+                  <img width="270" height="272" src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Necklace with amethyst</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x">
-                <img width="270" height="272" src="img/elephant-earrings.jpg" srcset="img/elephant-earrings@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Gold chain</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x">
+                  <img width="270" height="272" src="img/elephant-earrings.jpg" srcset="img/elephant-earrings@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Gold chain</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x">
-                <img width="270" height="272" src="img/origami-crane-necklace.jpg" srcset="img/origami-crane-necklace@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Galaxy earrings</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x">
+                  <img width="270" height="272" src="img/origami-crane-necklace.jpg" srcset="img/origami-crane-necklace@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Galaxy earrings</h4>
+              <p>$ 115</p>
+            </a>
           </li>
           <li class="catalog-products__item">
-            <div class="catalog-products__item-image">
-              <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
-              <picture>
-                <source type="image/webp" srcset="img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x">
-                <img width="270" height="272" src="img/blue-gemstone-pendant.jpg" srcset="img/blue-gemstone-pendant@2x.jpg" alt="Птица на ожерелье">
-              </picture>
-            </div>
-            <h4>Gold chain</h4>
-            <p>$ 115</p>
+            <a href="#" aria-label="Карточка товара">
+              <div class="catalog-products__item-image">
+                <!-- 1x = width: 270, height: 272; 2x = width: 540, height: 544; -->
+                <picture>
+                  <source type="image/webp" srcset="img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x">
+                  <img width="270" height="272" src="img/blue-gemstone-pendant.jpg" srcset="img/blue-gemstone-pendant@2x.jpg" alt="Птица на ожерелье">
+                </picture>
+              </div>
+              <h4>Gold chain</h4>
+              <p>$ 115</p>
+            </a>
           </li>
         </ul>
         <div class="catalog-products__pagination">
-          <p class="catalog-products__pagination-prev reset-text" tabindex="0">Previous</p>
+          <p class="catalog-products__pagination-prev reset-text">
+            <a href="#" aria-label="Предыдущая страница">Previous</a>
+          </p>
           <ul class="catalog-products__pagination-numbers reset-list">
-            <li class="catalog-products__pagination-number active" tabindex="0">1</li>
-            <li class="catalog-products__pagination-number" tabindex="0">2</li>
-            <li class="catalog-products__pagination-number" tabindex="0">3</li>
-            <li class="catalog-products__pagination-number" tabindex="0">4</li>
-            <li class="catalog-products__pagination-number" tabindex="0">5</li>
+            <li class="catalog-products__pagination-number active">
+              <a href="#" aria-label="Номер страницы">1</a></li>
+            <li class="catalog-products__pagination-number">
+              <a href="#" aria-label="Номер страницы">2</a>
+            </li>
+            <li class="catalog-products__pagination-number">
+              <a href="#" aria-label="Номер страницы">3</a>
+            </li>
+            <li class="catalog-products__pagination-number">
+              <a href="#" aria-label="Номер страницы">4</a>
+            </li>
+            <li class="catalog-products__pagination-number">
+              <a href="#" aria-label="Номер страницы">5</a>
+            </li>
           </ul>
-          <p class="catalog-products__pagination-next reset-text" tabindex="0">Next</p>
+          <p class="catalog-products__pagination-next reset-text">
+            <a href="#" aria-label="Следующая страница">Next</a>
+          </p>
         </div>
       </section>
     </section>
@@ -383,8 +420,8 @@
       <p class="footer__subscription-title reset-text">The good stuff in your inbox </p>
       <p class="footer__subscription-description reset-text">News and updates from CH. No spam, we promise.</p>
       <form action="https://echo.htmlacademy.ru/" class="footer__form" id="subscription-form">
-        <input class="footer__email-input" type="email" name="subscription-email" id="subscription-email" placeholder="Your E-mail">
-        <label class="footer__email-label" for="subscription-email"></label>
+        <input type="email" name="subscription-email" id="subscription-email" placeholder="Your E-mail">
+        <label for="subscription-email"></label>
         <button class="footer__email-submit reset-button" type="submit" aria-label="Подписаться на рассылку">
           Sign up
           <svg width="29" height="9">
@@ -423,7 +460,7 @@
     </ul>
     <ul class="footer__social-list reset-list">
       <li class="footer__social-item">
-        <a href="#facebook" aria-label="Facebook">
+        <a class="footer__social-link" href="#facebook" aria-label="Facebook">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
           </svg>
@@ -433,7 +470,7 @@
         </a>
       </li>
       <li class="footer__social-item">
-        <a href="#instagram" aria-label="Instagram">
+        <a class="footer__social-link" href="#instagram" aria-label="Instagram">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
           </svg>
@@ -443,7 +480,7 @@
         </a>
       </li>
       <li class="footer__social-item">
-        <a href="#pinterest" aria-label="Pinterest">
+        <a class="footer__social-link" href="#pinterest" aria-label="Pinterest">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-pin"></use>
           </svg>
@@ -453,7 +490,7 @@
         </a>
       </li>
       <li class="footer__social-item">
-        <a href="#twitter" aria-label="Twitter">
+        <a class="footer__social-link" href="#twitter" aria-label="Twitter">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-twit"></use>
           </svg>

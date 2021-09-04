@@ -51,18 +51,18 @@
   align-items: center;
   padding-bottom: 8px;
   border-bottom: 1px solid #ffffff;
-}
 
-.footer__email-input {
-  width: 100%;
-  margin-right: 48px;
-  border: none;
-  border-radius: 0;
-  background: transparent;
-  color: #ffffff;
+  input {
+    width: 100%;
+    margin-right: 48px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #ffffff;
 
-  @media (max-width: 1023px) {
-    margin-right: 24px;
+    @media (max-width: 1023px) {
+      margin-right: 24px;
+    }
   }
 }
 
@@ -133,18 +133,20 @@
 }
 
 .footer__social-item {
-  a {
-    display: flex;
-    align-items: center;
+  @media (max-width: 767px) {
+    margin-right: 12px;
+  }
+}
 
-    svg {
-      margin-right: 15px;
-    }
+.footer__social-link {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 15px;
   }
 
   @media (max-width: 767px) {
-    margin-right: 12px;
-
     svg {
       width: 20px;
       height: 21px;

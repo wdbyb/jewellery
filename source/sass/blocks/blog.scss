@@ -123,10 +123,10 @@
       .blog__article-image-wrapper {
         width: 100%;
         height: 256px;
+      }
 
-        img {
-          object-position: top;
-        }
+      .blog__article-image {
+        object-position: top;
       }
     }
 

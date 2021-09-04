@@ -2,7 +2,7 @@
 
 const header = document.querySelector('.header');
 const menuToggler = document.querySelector('.header__menu');
-const questionsTogglers = document.querySelectorAll('.questions__item button');
+const questionsTogglers = document.querySelectorAll('.questions__toggler');
 const filterTogglers = document.querySelectorAll('.catalog-filter__item button');
 const filterToggler = document.querySelector('.catalog-filter__open-filter');
 const filterClose = document.querySelector('.catalog-filter__btn-close');
@@ -33,6 +33,7 @@ const swiper = new Swiper('.swiper', {
   },
   breakpoints: {
     320: {
+      slidesPerGroup: 2,
       slidesPerView: 2,
       pagination: {
         type: 'fraction',
@@ -42,12 +43,14 @@ const swiper = new Swiper('.swiper', {
       }
     },
     768: {
+      slidesPerGroup: 2,
       slidesPerView: 2,
       pagination: {
         type: 'bullets',
       }
     },
     1024: {
+      slidesPerGroup: 4,
       slidesPerView: 4,
       allowTouchMove: false,
     }

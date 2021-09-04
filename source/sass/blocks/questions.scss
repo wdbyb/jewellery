@@ -38,6 +38,27 @@
   }
 }
 
+.questions__toggler {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  cursor: pointer;
+
+  &.active {
+    transform: rotate(0deg);
+  }
+
+  &.active + p {
+    display: block;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: orange;
+  }
+}
+
 .questions__item {
   display: flex;
   flex-wrap: wrap;
@@ -83,20 +104,6 @@
     svg {
       width: 100%;
       height: 100%;
-    }
-
-    &.active {
-      transform: rotate(0deg);
-    }
-
-    &.active + p {
-      display: block;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: orange;
     }
   }
 
