@@ -11,7 +11,7 @@
 <body>
   <header class="header header--menu-opened">
     <form class="header__form" action="https://echo.htmlacademy.ru/" id="header-form">
-      <input type="search" id="header-search" placeholder="Type here to search">
+      <input type="search" id="header-search" placeholder="Type here to search" required>
       <label for="header-search">
         <svg width="14" height="14">
           <use xlink:href="img/sprite_auto.svg#icon-search"></use>
@@ -43,7 +43,7 @@
     </ul>
     <div class="header__footer">
       <form class="header__nav-form" action="https://echo.htmlacademy.ru/" id="nav-form">
-        <input class="header__nav-search" type="search" name="nav-search" id="nav-search">
+        <input class="header__nav-search" type="search" name="nav-search" id="nav-search" required>
         <label class="header__nav-label" for="nav-search">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-search"></use>
@@ -403,9 +403,9 @@
           </svg>
         </button>
         <form class="login__form" action="https://echo.htmlacademy.ru/" method="POST" id="login-form">
-          <input class="login__email" type="email" name="login-email" id="login-email" placeholder="Your E-mail" tabindex="2">
+          <input class="login__email" type="email" name="login-email" id="login-email" placeholder="Your E-mail" tabindex="2" required>
           <label class="visually-hidden" for="login-email">E-mail</label>
-          <input class="login__password" type="password" name="login-password" id="login-password" placeholder="Password" tabindex="3">
+          <input class="login__password" type="password" name="login-password" id="login-password" placeholder="Password" tabindex="3" required>
           <label class="visually-hidden" for="login-password">Password</label>
           <p class="login__forgot reset-text"><a href="#" tabindex="4" aria-label="Reset password">Forgot your password?</a></p>
           <button class="login__btn-submit reset-button" type="submit" tabindex="5" aria-label="Войти">Log In</button>
@@ -420,7 +420,7 @@
       <p class="footer__subscription-title reset-text">The good stuff in your inbox </p>
       <p class="footer__subscription-description reset-text">News and updates from CH. No spam, we promise.</p>
       <form action="https://echo.htmlacademy.ru/" class="footer__form" id="subscription-form">
-        <input type="email" name="subscription-email" id="subscription-email" placeholder="Your E-mail">
+        <input type="email" name="subscription-email" id="subscription-email" placeholder="Your E-mail" required>
         <label for="subscription-email"></label>
         <button class="footer__email-submit reset-button" type="submit" aria-label="Подписаться на рассылку">
           Sign up

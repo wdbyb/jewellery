@@ -11,7 +11,7 @@
 <body>
   <header class="header header--menu-opened">
     <form class="header__form" action="https://echo.htmlacademy.ru/" id="header-form">
-      <input type="search" id="header-search" placeholder="Type here to search">
+      <input type="search" id="header-search" placeholder="Type here to search" required>
       <label for="header-search">
         <svg width="14" height="14">
           <use xlink:href="img/sprite_auto.svg#icon-search"></use>
@@ -43,7 +43,7 @@
     </ul>
     <div class="header__footer">
       <form class="header__nav-form" action="https://echo.htmlacademy.ru/" id="nav-form">
-        <input class="header__nav-search" type="search" name="nav-search" id="nav-search">
+        <input class="header__nav-search" type="search" name="nav-search" id="nav-search" required>
         <label class="header__nav-label" for="nav-search">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-search"></use>
@@ -105,9 +105,9 @@
           </svg>
         </button>
         <form class="login__form" action="https://echo.htmlacademy.ru/" method="POST" id="login-form">
-          <input class="login__email" type="email" name="login-email" id="login-email" placeholder="Your E-mail">
+          <input class="login__email" type="email" name="login-email" id="login-email" placeholder="Your E-mail" required>
           <label class="visually-hidden" for="login-email">E-mail</label>
-          <input class="login__password" type="password" name="login-password" id="login-password" placeholder="Password">
+          <input class="login__password" type="password" name="login-password" id="login-password" placeholder="Password" required>
           <label class="visually-hidden" for="login-password">Password</label>
           <p class="login__forgot reset-text"><a href="#" aria-label="Востановит пароль">Forgot your password?</a></p>
           <button class="login__btn-submit reset-button" type="submit" aria-label="Войти">Log In</button>
