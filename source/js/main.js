@@ -2,8 +2,8 @@
 
 const header = document.querySelector('.header');
 const menuToggler = document.querySelector('.header__menu');
-const questionsTogglers = document.querySelectorAll('.questions__toggler');
-const filterTogglers = document.querySelectorAll('.catalog-filter__item button');
+const questionsTogglers = document.querySelectorAll('.questions__item');
+const filterTogglers = document.querySelectorAll('.catalog-filter__item');
 const filterToggler = document.querySelector('.catalog-filter__open-filter');
 const filterClose = document.querySelector('.catalog-filter__btn-close');
 const loginBtn = document.querySelector('.header__user-item--login a');
@@ -14,6 +14,7 @@ const popupClose = popup.querySelector('.login__btn-close');
 const loginForm = popup.querySelector('#login-form');
 const emailInput = loginForm.querySelector('#login-email');
 const loopers = popup.querySelectorAll('.login__looper');
+const headerLoopers = document.querySelectorAll('.header__loopers');
 const body = document.querySelector('body');
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
@@ -66,6 +67,18 @@ function elementsListen(arr, activeClass) {
         el.classList.remove(activeClass);
       } else {
         el.classList.add(activeClass);
+      }
+    });
+
+    el.addEventListener('keypress', function(evt) {
+      evt.preventDefault();
+
+      if (evt.keyCode === 32) {
+        if (el.classList.contains(activeClass)) {
+          el.classList.remove(activeClass);
+        } else {
+          el.classList.add(activeClass);
+        }
       }
     });
   });
@@ -127,8 +140,18 @@ if (filterToggler) {
 menuToggler.addEventListener('click', function() {
   if (header.classList.contains('header--menu-opened')) {
     header.classList.remove('header--menu-opened');
+    header.classList.remove('header--menu-opened-js');
+    body.style.overflow = 'scroll';
   } else {
     header.classList.add('header--menu-opened');
+    header.classList.add('header--menu-opened-js');
+    body.style.overflow = 'hidden';
+
+    headerLoopers.forEach((item) => {
+      item.addEventListener('focus', () => {
+        menuToggler.focus();
+      });
+    });
   }
 });
 

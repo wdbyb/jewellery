@@ -10,6 +10,7 @@
 </head>
 <body>
   <header class="header header--menu-opened">
+    <div class="header__loopers" tabindex="0"></div>
     <form class="header__form" action="https://echo.htmlacademy.ru/" id="header-form">
       <input type="search" id="header-search" placeholder="Type here to search" required>
       <label for="header-search">
@@ -86,6 +87,7 @@
         </ul>
       </nav>
     </div>
+    <div class="header__loopers" tabindex="0"></div>
   </header>
   <main>
     <h1 class="visually-hidden">Каталог</h1>
@@ -107,13 +109,13 @@
         <button class="catalog-filter__open-filter opened reset-button" type="button" aria-label="Открыть фильтр">Filter</button>
         <form class="catalog-filter__form" action="https://echo.htmlacademy.ru/" method="POST" id="filter-form">
           <ul class="catalog-filter__list reset-list">
-            <li class="catalog-filter__item">
+            <li class="catalog-filter__item active" tabindex="0" aria-label="Показать больше">
               <h4>Product</h4>
-              <button class="catalog-filter__item-btn reset-button active" type="button" aria-label="Показать больше">
+              <div class="catalog-filter__item-arrow">
                 <svg width="15" height="8">
                   <use xlink:href="img/sprite_auto.svg#icon-pointer"></use>
                 </svg>
-              </button>
+              </div>
               <ul class="catalog-filter__item-options reset-list">
                 <li class="catalog-filter__item-option">
                   <input class="visually-hidden" type="checkbox" name="product-necklaces" id="product-necklaces">
@@ -133,13 +135,13 @@
                 </li>
               </ul>
             </li>
-            <li class="catalog-filter__item">
+            <li class="catalog-filter__item active" tabindex="0" aria-label="Показать больше">
               <h4>Material</h4>
-              <button class="catalog-filter__item-btn reset-button active" type="button" aria-label="Показать больше">
+              <div class="catalog-filter__item-arrow">
                 <svg width="15" height="8">
                   <use xlink:href="img/sprite_auto.svg#icon-pointer"></use>
                 </svg>
-              </button>
+              </div>
               <ul class="catalog-filter__item-options reset-list">
                 <li class="catalog-filter__item-option">
                   <input class="visually-hidden" type="checkbox" name="material-gold" id="material-gold">
@@ -151,13 +153,13 @@
                 </li>
               </ul>
             </li>
-            <li class="catalog-filter__item">
+            <li class="catalog-filter__item active" tabindex="0" aria-label="Показать больше">
               <h4>Collection</h4>
-              <button class="catalog-filter__item-btn reset-button active" type="button" aria-label="Показать больше">
+              <div class="catalog-filter__item-arrow">
                 <svg width="15" height="8">
                   <use xlink:href="img/sprite_auto.svg#icon-pointer"></use>
                 </svg>
-              </button>
+              </div>
               <ul class="catalog-filter__item-options reset-list">
                 <li class="catalog-filter__item-option">
                   <input class="visually-hidden" type="checkbox" name="collection-pink-flamingo" id="collection-pink-flamingo">
@@ -169,13 +171,13 @@
                 </li>
               </ul>
             </li>
-            <li class="catalog-filter__item">
+            <li class="catalog-filter__item active" tabindex="0" aria-label="Показать больше">
               <h4>Price</h4>
-              <button class="catalog-filter__item-btn reset-button active" type="button" aria-label="Показать больше">
+              <div class="catalog-filter__item-arrow">
                 <svg width="15" height="8">
                   <use xlink:href="img/sprite_auto.svg#icon-pointer"></use>
                 </svg>
-              </button>
+              </div>
               <div class="catalog-filter__item-options">
                 <div class="catalog-filter__price-bg">
                   <div class="catalog-filter__price-diapason"></div>

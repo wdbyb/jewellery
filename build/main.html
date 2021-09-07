@@ -10,6 +10,7 @@
 </head>
 <body>
   <header class="header header--menu-opened">
+    <div class="header__loopers" tabindex="0"></div>
     <form class="header__form" action="https://echo.htmlacademy.ru/" id="header-form">
       <input type="search" id="header-search" placeholder="Type here to search" required="">
       <label for="header-search">
@@ -23,7 +24,7 @@
         <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
       </svg>
     </button>
-    <a class="header__logo" aria-label="Логотип">
+    <a class="header__logo">
       <svg width="66" height="66">
         <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
       </svg>
@@ -86,6 +87,7 @@
         </ul>
       </nav>
     </div>
+    <div class="header__loopers" tabindex="0"></div>
   </header>
   <main>
     <h1 class="visually-hidden">Магазин украшений &laquo;Jewellery&raquo;</h1>
@@ -126,7 +128,7 @@
                   <img width="270" height="272" src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg" alt="Бижутерия">
                 </picture>
               </div>
-              <h3>Layered choker</h3>
+              <h3>Necklace with amethyst</h3>
               <p>$ 115</p>
             </a>
           </li>
@@ -139,7 +141,7 @@
                   <img width="270" height="272" src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg" alt="Птица на ожерелье">
                 </picture>
               </div>
-              <h3>Necklace with amethyst</h3>
+              <h3>Layered choker</h3>
               <p>$ 115</p>
             </a>
           </li>
@@ -280,7 +282,7 @@
     </section>
     <section class="blog">
       <h2 class="blog__title reset-text">Blog</h2>
-      <a class="blog__link" href="#blog-all" aria-label="Read All">Read All</a>
+      <a class="blog__link" href="#blog-all" aria-label="Читать всё">Read All</a>
       <ul class="blog__list reset-list">
         <li class="blog__item">
           <article class="blog__article">
@@ -294,7 +296,7 @@
             <div class="blog__article-text">
               <p><time datetime="2019-09-30">September 30, 2019</time></p>
               <h3>How to care for your jewellery</h3>
-              <a href="#" aria-label="Read Article">Read Article</a>
+              <a href="#" aria-label="Читать статью о бижутерии">Read Article</a>
             </div>
           </article>
         </li>
@@ -310,7 +312,7 @@
             <div class="blog__article-text">
               <p><time datetime="2019-09-18">September 18, 2019</time></p>
               <h3>AW 19 trends</h3>
-              <a href="#" aria-label="Read Article">Read Article</a>
+              <a href="#" aria-label="Читать статью о трендах">Read Article</a>
             </div>
           </article>
         </li>
@@ -326,7 +328,7 @@
             <div class="blog__article-text">
               <p><time datetime="2019-09-23">September 23, 2019</time></p>
               <h3>Power of crystals</h3>
-              <a href="#" aria-label="Read Article">Read Article</a>
+              <a href="#" aria-label="Читать статью о силе кристалов">Read Article</a>
             </div>
           </article>
         </li>
@@ -335,47 +337,47 @@
     <section class="questions">
       <h2 class="questions__title reset-text">Frequently asked questions</h2>
       <ul class="questions__list reset-list">
-        <li class="questions__item">
+        <li class="questions__item active" tabindex="0" aria-label="Показать больше">
           <div class="questions__toggler">
             <h3>What materials are the jewellery made of?</h3>
-            <button class="questions__item-btn reset-button active" type="button" aria-label="Показать больше">
+            <div class="questions__item-arrow">
               <svg width="15" height="8">
                 <use xlink:href="img/sprite_auto.svg#icon-pointer"></use>
               </svg>
-            </button>
+            </div>
           </div>
           <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
         </li>
-        <li class="questions__item">
+        <li class="questions__item active" tabindex="0" aria-label="Показать больше">
           <div class="questions__toggler">
             <h3>Which countries do you deliver to?</h3>
-            <button class="questions__item-btn reset-button active" type="button" aria-label="Показать больше">
+            <div class="questions__item-arrow">
               <svg width="15" height="8">
                 <use xlink:href="img/sprite_auto.svg#icon-pointer"></use>
               </svg>
-            </button>
+            </div>
           </div>
           <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
         </li>
-        <li class="questions__item">
+        <li class="questions__item active" tabindex="0" aria-label="Показать больше">
           <div class="questions__toggler">
             <h3>What are the payment methods?</h3>
-            <button class="questions__item-btn reset-button active" type="button" aria-label="Показать больше">
+            <div class="questions__item-arrow">
               <svg width="15" height="8">
                 <use xlink:href="img/sprite_auto.svg#icon-pointer"></use>
               </svg>
-            </button>
+            </div>
           </div>
           <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
         </li>
-        <li class="questions__item">
+        <li class="questions__item active" tabindex="0" aria-label="Показать больше">
           <div class="questions__toggler">
             <h3>Can I return the jewellery if it didn’t fit me?</h3>
-            <button class="questions__item-btn reset-button active" type="button" aria-label="Показать больше">
+            <div class="questions__item-arrow">
               <svg width="15" height="8">
                 <use xlink:href="img/sprite_auto.svg#icon-pointer"></use>
               </svg>
-            </button>
+            </div>
           </div>
           <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
         </li>
@@ -383,7 +385,7 @@
     </section>
     <section class="instagram">
       <h2 class="instagram__title reset-text">@Chjewellery</h2>
-      <a href="#" class="instagram__link" aria-label="Follow Us">Follow Us</a>
+      <a href="#" class="instagram__link" aria-label="Подписывайтесь на наши соцсети">Follow Us</a>
       <ul class="instagram__photos reset-list">
         <li class="instagram__photo">
           <!-- 1x = width: 230, height: 230; 2x = width: 460, height: 460; -->
@@ -482,35 +484,35 @@
     </div>
     <ul class="footer__service-list reset-list">
       <li class="footer__service-item">
-        <a href="#ordering" aria-label="Ordering & Payment">Ordering & Payment</a>
+        <a href="#ordering" aria-label="Заказ и оплата">Ordering & Payment</a>
       </li>
       <li class="footer__service-item">
-        <a href="#terms" aria-label="Terms & Conditions">Terms & Conditions</a>
+        <a href="#terms" aria-label="Условия и термины">Terms & Conditions</a>
       </li>
       <li class="footer__service-item">
-        <a href="#returns" aria-label="Returns & Exchanges">Returns & Exchanges</a>
+        <a href="#returns" aria-label="Возвращение и обмен товара">Returns & Exchanges</a>
       </li>
       <li class="footer__service-item">
-        <a href="#delivery" aria-label="Delivery">Delivery</a>
+        <a href="#delivery" aria-label="Доставка">Delivery</a>
       </li>
     </ul>
     <ul class="footer__contacts-list reset-list">
       <li class="footer__contacts-item">
-        <a href="#" aria-label="About CH">About CH</a>
+        <a href="#" aria-label="О нас">About CH</a>
       </li>
       <li class="footer__contacts-item">
-        <a href="#" aria-label="Stores & Hours">Stores & Hours</a>
+        <a href="#" aria-label="Время работы">Stores & Hours</a>
       </li>
       <li class="footer__contacts-item">
-        <a href="#" aria-label="Jobs">Jobs</a>
+        <a href="#" aria-label="Вакансии">Jobs</a>
       </li>
       <li class="footer__contacts-item">
-        <a href="#" aria-label="Contact Us">Contact Us</a>
+        <a href="#" aria-label="Контакты">Contact Us</a>
       </li>
     </ul>
     <ul class="footer__social-list reset-list">
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#facebook" aria-label="Facebook">
+        <a class="footer__social-link" href="#facebook" aria-label="Наш фейсбук">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
           </svg>
@@ -520,7 +522,7 @@
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#instagram" aria-label="Instagram">
+        <a class="footer__social-link" href="#instagram" aria-label="Наш инстаграм">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
           </svg>
@@ -530,7 +532,7 @@
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#pinterest" aria-label="Pinterest">
+        <a class="footer__social-link" href="#pinterest" aria-label="Нам пинтерест">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-pin"></use>
           </svg>
@@ -540,7 +542,7 @@
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link" href="#twitter" aria-label="Twitter">
+        <a class="footer__social-link" href="#twitter" aria-label="Наш твиттер">
           <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-twit"></use>
           </svg>

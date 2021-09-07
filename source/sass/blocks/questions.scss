@@ -42,27 +42,20 @@
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
+  padding: 43px;
   cursor: pointer;
 
-  &.active button {
-    transform: rotate(0deg);
-  }
-
-  &.active + p {
-    display: block;
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: orange;
+  @media (max-width: 767px) {
+    padding: 25px;
+    padding-top: 15px;
+    padding-right: 20px;
   }
 }
 
 .questions__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 43px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   color: #1D1613;
@@ -70,6 +63,34 @@
 
   &:last-child {
     border-bottom: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    h3 {
+      color: orange;
+    }
+
+    .questions__item-arrow {
+      color: orange;
+    }
+  }
+
+  &.active {
+    padding: 43px;
+
+    .questions__item-arrow {
+      transform: rotate(0deg);
+    }
+
+    .questions__toggler {
+      padding: 0;
+    }
+
+    p {
+      display: block;
+    }
   }
 
   h3 {
@@ -92,14 +113,15 @@
     line-height: 21px;
   }
 
-  button {
+  .questions__item-arrow {
+    position: absolute;
+    top: 50px;
+    right: 5%;
     width: 23px;
     height: 23px;
     padding: 3px;
     transform: rotate(180deg);
-    margin-left: auto;
     color: #A87B62;
-    cursor: pointer;
 
     svg {
       width: 100%;
@@ -115,9 +137,11 @@
   }
 
   @media (max-width: 767px) {
-    padding: 25px;
-    padding-top: 15px;
-    padding-right: 20px;
+    &.active {
+      padding: 25px;
+      padding-top: 15px;
+      padding-right: 20px;
+    }
 
     h3 {
       flex-basis: 85%;
@@ -125,7 +149,7 @@
       line-height: 22px;
     }
 
-    button {
+    .questions__item-arrow {
       width: 26px;
       height: 26px;
     }

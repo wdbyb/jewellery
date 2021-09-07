@@ -11,6 +11,7 @@
 
   @media (max-width: 1023px) {
     padding: 45px calc(50% - 339px);
+    padding-top: 50px;
   }
 
   @media (max-width: 767px) {
@@ -29,6 +30,10 @@
     margin: 0;
     margin-bottom: 50px;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 }
 
 .footer__subscription-title {
@@ -37,12 +42,21 @@
   font-weight: 700;
   font-size: 34px;
   line-height: 44px;
+
+  @media (max-width: 767px) {
+    padding-right: 22%;
+    margin-bottom: 14px;
+  }
 }
 
 .footer__subscription-description {
   margin-bottom: 40px;
   font-weight: 400;
   color: #9B9997;
+
+  @media (max-width: 767px) {
+    padding-right: 15%;
+  }
 }
 
 .footer__form {
@@ -51,13 +65,14 @@
   align-items: center;
   padding-bottom: 8px;
   border-bottom: 1px solid #ffffff;
+  background: #000000;
 
   input {
     width: 100%;
     margin-right: 48px;
     border: none;
     border-radius: 0;
-    background: transparent;
+    background-color: transparent;
     color: #ffffff;
 
     @media (max-width: 1023px) {
@@ -87,8 +102,10 @@
 .footer__contacts-list,
 .footer__social-list {
   flex-shrink: 0;
-  padding-left: 15px;
+  padding-left: 10px;
   margin-left: auto;
+  margin-top: 5px;
+  background: #000000;
 
   @media (max-width: 1023px) {
     padding: 0;
@@ -101,6 +118,16 @@
     margin: 0;
     margin-right: 50px;
     margin-bottom: 20px;
+  }
+}
+
+.footer__contacts-list {
+  width: 100%;
+  max-width: 140px;
+
+  @media (max-width: 1023px) {
+    width: auto;
+    max-width: inherit;
   }
 }
 
