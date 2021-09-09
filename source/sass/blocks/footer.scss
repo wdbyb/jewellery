@@ -33,7 +33,9 @@
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 40px;
+    margin-bottom: 44px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -81,6 +83,10 @@
       margin-right: 24px;
     }
   }
+
+  @media (max-width: 767px) {
+    padding-bottom: 11px;
+  }
 }
 
 .footer__email-submit {
@@ -97,6 +103,11 @@
 
   svg {
     margin-left: 12px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 21px;
   }
 }
 
